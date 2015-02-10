@@ -35,10 +35,6 @@ arq-perf
 *.iml
 .idea
 
-# TAF output
-test-output/
-tmp/
-
 # Checkstyle files
 *.checkstyle
 
