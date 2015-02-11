@@ -2,6 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.milenkovicm</groupId>
@@ -16,14 +17,14 @@
     <distributionManagement>
         <repository>
             <id>bintray</id>
-            <name>bintray-${artifactId}</name>
-            <url>https://api.bintray.com/maven/milenkovicm/maven/${artifactId}</url>
+            <name>bintray-${project.artifactId}</name>
+            <url>https://api.bintray.com/maven/milenkovicm/maven/${project.artifactId}</url>
         </repository>
     </distributionManagement>
     <scm>
-        <connection>scm:git:https://github.com/milenkovicm/${artifactId}.git</connection>
-        <developerConnection>scm:git:git@github.com:milenkovicm/${artifactId}.git</developerConnection>
-        <url>https://github.com/milenkovicm/${artifactId}</url>
+        <connection>scm:git:https://github.com/milenkovicm/${project.artifactId}.git</connection>
+        <developerConnection>scm:git:git@github.com:milenkovicm/${project.artifactId}.git</developerConnection>
+        <url>https://github.com/milenkovicm/${project.artifactId}</url>
         <tag>HEAD</tag>
     </scm>
     <dependencies>
