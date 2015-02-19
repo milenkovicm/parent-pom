@@ -33,8 +33,12 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+            <!--
+                use simplelogger.properties if you want to change logger properties
+                for more details check http://www.slf4j.org/api/org/slf4j/impl/SimpleLogger.html
+            -->
             <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-nop</artifactId>
+            <artifactId>slf4j-simple</artifactId>
             <version>${version.slf4j}</version>
         </dependency>
     </dependencies>
@@ -72,6 +76,18 @@
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                 </configuration>
             </plugin>
+	  <plugin>
+	    <groupId>org.apache.maven.plugins</groupId>
+	    <artifactId>maven-site-plugin</artifactId>
+	    <version>3.4</version>
+	    <dependencies>
+	      <dependency>
+		<groupId>org.apache.maven.doxia</groupId>
+		<artifactId>doxia-module-markdown</artifactId>
+		<version>1.6</version>
+	      </dependency>
+	    </dependencies>
+	  </plugin>
         </plugins>
     </build>
     <profiles>
