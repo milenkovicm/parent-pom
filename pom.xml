@@ -9,8 +9,8 @@
     <packaging>pom</packaging>
     <properties>
         <version.java>1.8</version.java>
-        <version.junit>4.11</version.junit>
-        <version.slf4j>1.7.10</version.slf4j>
+        <version.junit>4.12</version.junit>
+        <version.slf4j>1.7.21</version.slf4j>
     </properties>
     <distributionManagement>
         <repository>
